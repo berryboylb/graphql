@@ -1,9 +1,9 @@
 import React from 'react'
-
+import "./styles.css";
 const filter = () => {
   return (
-      <div>
-          <input type="text" placeholder='search by status here' />
+      <div >
+          <input className='input' type="text" placeholder='Search by status here' />
     </div>
   )
 }

@@ -15,3 +15,70 @@
     font-size: 2rem;
     color: #b38cfc;
 }
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+     font-family: 'Poppins', sans-serif;
+     border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: 600;
+}
+
+
+tr:nth-child(even) {
+  background-color: #b38cfc;
+  color: #fff;
+}
+
+
+/* input */
+
+.input {
+    width: 300px;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    outline: none;
+    border: 1.5px solid #b38cfc;
+    text-align: center;
+    color: #b38cfc;
+}
+
+.input:focus {
+    border: 1.5px solid #0b011c;
+    color: #0b011c;
+    transition: all .3s ease-in;
+}
+
+.input::placeholder {
+    color: grey;
+}
+
+/* select */
+.select {
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1.5px solid #b38cfc;
+    outline: none;
+     background: #b38cfc;
+    color: #fff;
+}
+
+
+
+

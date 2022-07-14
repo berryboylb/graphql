@@ -8,6 +8,7 @@ import store from "./store";
 import Home from "./components/Home";
 import Filter from "./components/filter"
 import toast from 'react-hot-toast';
+import "./App.css"
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {

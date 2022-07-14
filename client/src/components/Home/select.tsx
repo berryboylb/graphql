@@ -1,4 +1,5 @@
 import React from 'react'
+import "./styles.css";
 const Select = () => {
     const [option] = React.useState<Array<any>>([
       { id: 1, staus: "pending" },
@@ -7,7 +8,7 @@ const Select = () => {
     ]);
   return (
     <div>
-      <select>
+      <select className='select'>
         {option.map((item) => (
           <>
             <option>{item.staus}</option>
