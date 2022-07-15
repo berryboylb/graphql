@@ -10,11 +10,42 @@ const Index = () => {
   const { error, loading, data } = useQuery(FILTER_TRANSACTIONS, {
     variables: { status: item },
   });
+    const [transactions, setTransactions] = React.useState<Array<any>>([]);
+     React.useEffect(() => {
+       if (data) setTransactions(data.getTransactionsBytypesorStatus);
+     }, [data]);
   return (
     <div>
       <div className="my-container">
         <button onClick={() => naviagate("/")}>Back</button>
-        {JSON.stringify(data, null, 2)}
+        <div>
+          {transactions.length > 0 ? (
+            <>
+              {transactions.map((item: any) => (
+                <table>
+                  <tr>
+                    <th>S/N</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Full Name</th>
+                    <th>Card Type</th>
+                  </tr>
+                    <tr>
+                      <td>{item.id}</td>
+                      <td>{item.status}</td>
+                      <td>{item.date}</td>
+                      <td>{item.name}</td>
+                      <td>{item.type}</td>
+                    </tr>
+                </table>
+              ))}
+            </>
+          ) : (
+            <div>
+              <h2>An Error Ocurred</h2>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
