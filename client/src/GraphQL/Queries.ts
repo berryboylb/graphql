@@ -16,13 +16,14 @@ export const GET_ALL_TRANSACTIONS = gql`
 `;
 
 export const FILTER_TRANSACTIONS = gql`
-  query {
-    getTransactionsBytypesorStatus(status: "failed") {
-      id
-      name
-      status
-      type
-      date
-    }
-  }
+query getTransactionsBytypesorStatus($status: String!) {
+        getTransactionsBytypesorStatus(status: $status){
+            id
+            name
+            status
+            type
+            date
+        }
+}
+
 `;
