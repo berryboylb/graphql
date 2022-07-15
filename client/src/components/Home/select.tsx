@@ -10,7 +10,6 @@ const Select = () => {
     ]);
     const [text, setText] = React.useState<string>("");
     const naviagate: any = useNavigate();
-    
     const handleChange = (value: string, selectOptionSetter: any) => {
         selectOptionSetter(value);
         naviagate(`/filter/${value}`);

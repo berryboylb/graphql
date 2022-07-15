@@ -42,6 +42,11 @@ th {
 tr:nth-child(even) {
   background-color: #b38cfc;
   color: #fff;
+
+}
+
+tr:nth-child(even):hover, tr:nth-child(odd):hover {
+    opacity: 0.9;
 }
 
 
