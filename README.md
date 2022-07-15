@@ -27,8 +27,8 @@
  Open [http://localhost:3000](http://localhost:3000) and [http://localhost:5000/graphql](http://localhost:5000/graphql) to view it in the browser.
  
  ## GraphQL enpoints
- ### 1) [http://localhost:5000/graphql/getAllTransactions](http://localhost:5000/graphql/getAllTransactions) this returns all the transactions grouped by their date
- ### 2) [http://localhost:5000/graphql/getTransactionsBytypesorStatus](http://localhost:5000/graphql/getTransactionsBytypesorStatus)
+ ### [http://localhost:5000/graphql/getAllTransactions](http://localhost:5000/graphql/getAllTransactions) this returns all the transactions grouped by their date
+ ### [http://localhost:5000/graphql/getTransactionsBytypesorStatus](http://localhost:5000/graphql/getTransactionsBytypesorStatus)
  ### this returns filtered array by the status passed to it.
  
  
@@ -39,5 +39,5 @@
  
  ## Client pages
  ### There are two client pages; one for getting all the data and the other for filtered data.
- ### 1) [http://localhost:3000](http://localhost:3000) This is the homepage that returns transactions grouped by date.
- ### 2) [http://localhost:3000//filter/{status}](http://localhost:3000//filter/{status}) This returns  filtered data based on the type of status passed either pending, failed or successful.
+ ### [http://localhost:3000](http://localhost:3000) This is the homepage that returns transactions grouped by date.
+ ### [http://localhost:3000//filter/{status}](http://localhost:3000//filter/{status}) This returns  filtered data based on the type of status passed either pending, failed or successful.
