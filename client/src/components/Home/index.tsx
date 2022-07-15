@@ -1,8 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import { GET_ALL_TRANSACTIONS } from "../../GraphQL/Queries";
-import { getAllData } from "../../actions/transaction";
-import transaction from "../../reducers/transactions";
 import Select from "./select";
 import Filter from "./filter";
 import "./styles.css"
