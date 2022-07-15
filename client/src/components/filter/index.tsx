@@ -55,7 +55,7 @@ const Index = () => {
             <div>
               <h4 className="error">
                 Invalid search params use sucessful, failed or pending to see
-                list of tarnsactions
+                list of transactions
               </h4>
             </div>
           )}
