@@ -17,7 +17,7 @@ const Filter = () => {
        };
      }, [text, naviagate]);
   return (
-    <div>
+    <div className='con'>
       <input
         className="input"
         type="search"

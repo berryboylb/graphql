@@ -26,11 +26,10 @@ const Index = () => {
     <div>
       <div className="my-container">
         <button onClick={() => naviagate("/")}>Back</button>
-
         <h1>List of {item} transactions</h1>
         <div>
           {transactions.length > 0 ? (
-            <>
+            <div className="overflow">
               <table>
                 <tbody>
                   <tr>
@@ -51,10 +50,10 @@ const Index = () => {
                   ))}
                 </tbody>
               </table>
-            </>
+            </div>
           ) : (
             <div>
-              <h4>
+              <h4 className="error">
                 Invalid search params use sucessful, failed or pending to see
                 list of tarnsactions
               </h4>

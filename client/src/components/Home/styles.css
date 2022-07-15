@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .contain {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
-    font-size: 2rem;
-    color: #b38cfc;
+  font-size: 2rem;
+  color: #b38cfc;
 }
-
 
 table {
   font-family: arial, sans-serif;
@@ -31,59 +29,116 @@ td {
 }
 
 th {
-     font-family: 'Poppins', sans-serif;
-     border: 1px solid #dddddd;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
   font-weight: 600;
 }
 
-
 tr:nth-child(even) {
   background-color: #b38cfc;
   color: #fff;
-
 }
 
-tr:nth-child(even):hover, tr:nth-child(odd):hover {
-    opacity: 0.9;
+tr:nth-child(even):hover,
+tr:nth-child(odd):hover {
+  opacity: 0.9;
 }
-
 
 /* input */
 
 .input {
-    width: 300px;
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: 50px;
-    outline: none;
-    border: 1.5px solid #b38cfc;
-    text-align: center;
-    color: #b38cfc;
+  width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  outline: none;
+  border: 1.5px solid #b38cfc;
+  text-align: center;
+  color: #b38cfc;
 }
 
 .input:focus {
-    border: 1.5px solid #0b011c;
-    color: #0b011c;
-    transition: all .3s ease-in;
+  border: 1.5px solid #0b011c;
+  color: #0b011c;
+  transition: all 0.3s ease-in;
 }
 
 .input::placeholder {
-    color: grey;
+  color: grey;
 }
 
 /* select */
 .select {
-    padding: .5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    border: 1.5px solid #b38cfc;
-    outline: none;
-     background: #b38cfc;
-    color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1.5px solid #b38cfc;
+  outline: none;
+  background: #b38cfc;
+  color: #fff;
+}
+
+/* error */
+.error {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: red;
 }
 
 
+@media only screen and (max-width: 930px) {
+  .header {
+    flex-direction: column;
+  }
 
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .overflow {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 1000px;
+  }
+  th {
+    font-size: 1rem;
+  }
+
+  td {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    text-align: center;
+  }
+
+  .con {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .select {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+}

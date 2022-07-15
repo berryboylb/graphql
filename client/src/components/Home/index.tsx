@@ -25,8 +25,8 @@ const Index: React.FC<Props> = () => {
           <>
             {transactions.map((item: any, index: number) => (
               <div key={index}>
-                <h3>Date: {item.date}</h3>
-                <div>
+                <h3 className="date">Date: {item.date}</h3>
+                <div className="overflow">
                   <table>
                     <tbody>
                       <tr>
@@ -53,7 +53,7 @@ const Index: React.FC<Props> = () => {
           </>
         ) : (
           <div>
-            <h2>An Error Ocurred</h2>
+            <h4 className="error">An Error Ocurred</h4>
           </div>
         )}
       </div>
