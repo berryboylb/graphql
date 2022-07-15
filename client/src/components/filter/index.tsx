@@ -18,28 +18,30 @@ const Index = () => {
     <div>
       <div className="my-container">
         <button onClick={() => naviagate("/")}>Back</button>
+
+        <h1>List of {item} transactions</h1>
         <div>
           {transactions.length > 0 ? (
-            <>
-              {transactions.map((item: any) => (
-                <table>
-                  <tr>
-                    <th>S/N</th>
-                    <th>Status</th>
-                    <th>Date</th>
-                    <th>Full Name</th>
-                    <th>Card Type</th>
+            <div>
+              <table>
+                <tr>
+                  <th>S/N</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th>Full Name</th>
+                  <th>Card Type</th>
+                </tr>
+                {transactions.map((item: any) => (
+                  <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.status}</td>
+                    <td>{item.date}</td>
+                    <td>{item.name}</td>
+                    <td>{item.type}</td>
                   </tr>
-                    <tr>
-                      <td>{item.id}</td>
-                      <td>{item.status}</td>
-                      <td>{item.date}</td>
-                      <td>{item.name}</td>
-                      <td>{item.type}</td>
-                    </tr>
-                </table>
-              ))}
-            </>
+                ))}
+              </table>
+            </div>
           ) : (
             <div>
               <h2>An Error Ocurred</h2>

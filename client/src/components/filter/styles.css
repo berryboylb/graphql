@@ -18,3 +18,9 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+h1 {
+    font-size: 2rem;
+    color: #b38cfc;
+     font-family: 'Poppins', sans-serif;
+}
